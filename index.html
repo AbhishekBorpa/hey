@@ -79,70 +79,90 @@
 </div>
 
 <!-- ================= HERO ================= -->
-<section class="relative h-screen w-full overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50 flex items-center">
+<section class="relative h-screen w-full overflow-hidden bg-white flex items-center">
 
-  <!-- Background Image with Subtle Ken Burns -->
-  <div class="absolute inset-0 z-0">
+  <!-- Background Architectural Element (Right Side) -->
+  <div class="absolute top-0 right-0 w-full lg:w-[65%] h-full z-0">
     <img 
       src="/images/architecture-work.webp" 
       alt="Modern Architecture" 
-      class="w-full h-full object-cover opacity-80 animate-ken-burns"
+      class="w-full h-full object-cover animate-ken-burns"
     >
-    <!-- Localized Misty Light Gradient behind text -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.4)_40%,transparent_70%)]"></div>
+    <!-- Sophisticated Gradient Fade -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/10"></div>
   </div>
 
-  <!-- Content Container -->
+  <!-- Content Layer (Left Side Focus) -->
   <div class="relative z-10 w-full px-6 md:px-16 lg:px-24">
     
-    <div data-animate="left" class="max-w-4xl opacity-0 -translate-x-8 transition-all duration-1000 ease-out">
+    <div data-animate="left" class="max-w-3xl opacity-0 -translate-x-12 transition-all duration-1000 ease-out">
       
-      <div class="flex items-center gap-4 mb-8">
-        <div class="w-12 h-[2px] bg-blue-600"></div>
-        <span class="text-xs font-bold tracking-[0.4em] text-blue-600 uppercase">
-          Est. 2015 | New Delhi
-        </span>
+      <!-- Premium Tagline -->
+      <div class="flex items-center gap-6 mb-10">
+        <span class="text-[10px] font-black uppercase tracking-[0.6em] text-blue-600">Premium Standards</span>
+        <div class="h-[1px] w-20 bg-blue-600/30"></div>
       </div>
       
-      <h1 class="text-6xl md:text-8xl font-light text-gray-900 leading-tight mb-8">
-        Architecture in <br>
-        <span class="font-bold text-blue-600 italic">Perfect Clarity.</span>
+      <!-- Headline with Interacting Weights -->
+      <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-gray-900 leading-[0.85] tracking-tighter mb-10">
+        CLARITY <br>
+        <span class="font-light italic text-blue-600">REDEFINED.</span>
       </h1>
 
-      <p class="mb-12 text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl font-light tracking-wide">
-        Premium glass solutions for the modern world. We bridge the gap between 
-        <span class="text-gray-900 font-medium border-b-2 border-blue-600/20">sophisticated design</span> and high-performance engineering.
-      </p>
+      <!-- Detailed Description with Structured Layout -->
+      <div class="flex flex-col md:flex-row gap-12 items-start md:items-center">
+        <p class="text-lg text-gray-500 leading-relaxed max-w-sm font-light">
+          Providing high-performance glass and uPVC solutions that bridge the gap between <span class="text-gray-900 font-medium">visionary design</span> and technical excellence.
+        </p>
 
-      <div class="flex flex-wrap gap-8 items-center">
-        <a href="/pages/service.html" class="group relative px-10 py-4 bg-blue-600 text-white font-bold tracking-widest text-xs uppercase transition-all hover:bg-blue-700 shadow-xl shadow-blue-600/20">
-          Explore Services
-        </a>
-
-        <a href="https://wa.me/919968511810" class="group flex items-center gap-4 text-gray-800 font-bold tracking-widest text-xs uppercase">
-          <span class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center group-hover:border-blue-600 group-hover:bg-blue-50 transition-all">
-            <i class="fab fa-whatsapp text-green-600"></i>
-          </span>
-          Consult an Expert
-        </a>
+        <!-- Professional Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/pages/service.html" class="px-8 py-4 bg-gray-900 text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-blue-600 transition-all duration-300 text-center">
+            Our Solutions
+          </a>
+          <a href="https://wa.me/919968511810" class="px-8 py-4 border border-gray-200 text-gray-900 text-[10px] font-bold uppercase tracking-[0.2em] hover:border-blue-600 hover:text-blue-600 transition-all duration-300 text-center">
+            Consultation
+          </a>
+        </div>
       </div>
 
     </div>
   </div>
 
-  <!-- Minimalist Side Stats (Vertical) -->
-  <div class="hidden lg:flex absolute right-12 bottom-24 z-10 flex-col gap-12 text-gray-900 border-l border-gray-200 pl-8">
-    <div>
-      <p class="text-3xl font-light">1000<span class="text-blue-600">+</span></p>
-      <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mt-1">Projects</p>
-    </div>
-    <div>
-      <p class="text-3xl font-light">10<span class="text-blue-600">+</span></p>
-      <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500 mt-1">Years</p>
+  <!-- Floating Side Branding -->
+  <div class="absolute left-10 bottom-24 hidden lg:block overflow-hidden">
+    <p class="text-[9px] font-bold uppercase tracking-[1em] text-gray-300 -rotate-90 origin-left">
+      MLSD — ESTABLISHED 2015
+    </p>
+  </div>
+
+  <!-- Minimal Scroll Indicator -->
+  <div class="absolute bottom-12 right-12 z-10 hidden md:flex items-center gap-6">
+    <span class="text-[9px] font-bold uppercase tracking-[0.4em] text-gray-400">Scroll to Explore</span>
+    <div class="w-20 h-[1px] bg-gray-200 relative overflow-hidden">
+      <div class="absolute inset-0 bg-blue-600 animate-scroll-line"></div>
     </div>
   </div>
 
 </section>
+
+<style>
+  @keyframes ken-burns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  @keyframes scroll-line {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .animate-ken-burns {
+    animation: ken-burns 30s ease-in-out infinite alternate;
+  }
+  .animate-scroll-line {
+    animation: scroll-line 2.5s infinite ease-in-out;
+  }
+</style>
 
 <style>
   @keyframes ken-burns {
