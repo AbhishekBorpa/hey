@@ -79,69 +79,90 @@
 </div>
 
 <!-- ================= HERO ================= -->
-<section class="relative h-screen w-full overflow-hidden bg-white flex items-center">
+<section class="relative h-screen w-full overflow-hidden bg-slate-950 flex items-center justify-center">
 
-  <!-- Background Architectural Element (Right Side) -->
-  <div class="absolute top-0 right-0 w-full lg:w-[65%] h-full z-0">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
     <img 
       src="/images/architecture-work.webp" 
       alt="Modern Architecture" 
-      class="w-full h-full object-cover animate-ken-burns"
+      class="w-full h-full object-cover opacity-40 animate-ken-burns"
     >
-    <!-- Sophisticated Gradient Fade -->
-    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/10"></div>
+    <!-- Cinematic Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/60 to-slate-950/90"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-transparent to-slate-950/80"></div>
   </div>
+  
+  <!-- Decorative Blurs for Depth -->
+  <div class="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-blue-600/20 rounded-full blur-[128px] z-0 animate-pulse-slow"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-cyan-400/20 rounded-full blur-[128px] z-0 animate-pulse-slow" style="animation-delay: 2s;"></div>
 
-  <!-- Content Layer (Left Side Focus) -->
-  <div class="relative z-10 w-full px-6 md:px-16 lg:px-24">
+  <!-- Content Layer -->
+  <div class="relative z-10 w-full max-w-7xl px-6 md:px-12 flex flex-col items-center text-center mt-16">
     
-    <div data-animate="left" class="max-w-3xl opacity-0 -translate-x-12 transition-all duration-1000 ease-out">
+    <div data-animate="up" class="flex flex-col items-center opacity-0 translate-y-12 transition-all duration-1000 ease-out">
       
-      <!-- Premium Tagline -->
-      <div class="flex items-center gap-6 mb-10">
-        <span class="text-[10px] font-black uppercase tracking-[0.6em] text-blue-600">Premium Standards</span>
-        <div class="h-[1px] w-20 bg-blue-600/30"></div>
+      <!-- Premium Tagline Badge -->
+      <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 shadow-lg">
+        <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_rgba(34,211,238,0.8)]"></span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-cyan-100">Excellence in Glass</span>
       </div>
       
-      <!-- Headline with Interacting Weights -->
-      <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-gray-900 leading-[0.85] tracking-tighter mb-10">
-        CLARITY <br>
-        <span class="font-light italic text-blue-600">REDEFINED.</span>
+      <!-- Headline -->
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tighter mb-6 drop-shadow-lg">
+        ELEVATE YOUR <br class="hidden sm:block">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-white">VISION IN GLASS</span>
       </h1>
 
-      <!-- Detailed Description with Structured Layout -->
-      <div class="flex flex-col md:flex-row gap-12 items-start md:items-center">
-        <p class="text-lg text-gray-500 leading-relaxed max-w-sm font-light">
-          Providing high-performance glass and uPVC solutions that bridge the gap between <span class="text-gray-900 font-medium">visionary design</span> and technical excellence.
-        </p>
+      <!-- Detailed Description -->
+      <p class="text-lg md:text-xl text-slate-300 max-w-2xl font-light mb-10 leading-relaxed drop-shadow-md">
+        Providing high-performance glass and uPVC solutions that bridge the gap between <span class="text-white font-medium">visionary design</span> and technical excellence.
+      </p>
 
-        <!-- Professional Action Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/pages/service.html" class="px-8 py-4 bg-gray-900 text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-blue-600 transition-all duration-300 text-center">
-            Our Solutions
-          </a>
-          <a href="https://wa.me/919968511810" class="px-8 py-4 border border-gray-200 text-gray-900 text-[10px] font-bold uppercase tracking-[0.2em] hover:border-blue-600 hover:text-blue-600 transition-all duration-300 text-center">
-            Consultation
-          </a>
-        </div>
+      <!-- Professional Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
+        <a href="/pages/service.html" class="group relative px-8 py-4 bg-blue-600 text-white text-xs font-bold uppercase tracking-[0.15em] rounded-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden w-full sm:w-auto flex justify-center items-center shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_50px_rgba(37,99,235,0.6)]">
+          <span class="relative z-10">Explore Solutions</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+        <a href="https://wa.me/919968511810" class="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 text-xs font-bold uppercase tracking-[0.15em] rounded-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto flex justify-center items-center shadow-lg hover:shadow-xl">
+          Free Consultation
+        </a>
       </div>
 
     </div>
   </div>
 
-  <!-- Floating Side Branding -->
-  <div class="absolute left-10 bottom-24 hidden lg:block overflow-hidden">
-    <p class="text-[9px] font-bold uppercase tracking-[1em] text-gray-300 -rotate-90 origin-left">
-      MLSD — ESTABLISHED 2015
-    </p>
+  <!-- Floating Glass Elements (Desktop Only) -->
+  <div class="hidden lg:flex absolute top-1/4 left-10 p-5 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] flex-col gap-3 transform -rotate-6 hover:rotate-0 transition-all duration-500 z-20 hover:bg-white/10 cursor-default">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white text-lg shadow-lg">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <div>
+        <p class="text-white font-bold">Premium Quality</p>
+        <p class="text-cyan-200 text-[10px] uppercase tracking-wider">Trusted Brands</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden lg:flex absolute bottom-1/4 right-10 p-5 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] flex-col gap-3 transform rotate-3 hover:rotate-0 transition-all duration-500 z-20 hover:bg-white/10 cursor-default">
+    <div class="flex items-center gap-4">
+      <div class="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center text-cyan-300 text-2xl backdrop-blur-md border border-white/5 shadow-inner">
+        <i class="fas fa-building"></i>
+      </div>
+      <div>
+        <p class="text-white font-bold text-2xl drop-shadow">1000+</p>
+        <p class="text-slate-300 text-xs uppercase tracking-wider">Projects Delivered</p>
+      </div>
+    </div>
   </div>
 
   <!-- Minimal Scroll Indicator -->
-  <div class="absolute bottom-12 right-12 z-10 hidden md:flex items-center gap-6">
-    <span class="text-[9px] font-bold uppercase tracking-[0.4em] text-gray-400">Scroll to Explore</span>
-    <div class="w-20 h-[1px] bg-gray-200 relative overflow-hidden">
-      <div class="absolute inset-0 bg-blue-600 animate-scroll-line"></div>
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center gap-3">
+    <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-slate-400">Scroll Down</span>
+    <div class="w-[1px] h-12 bg-white/10 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-[50%] bg-cyan-400 animate-scroll-down"></div>
     </div>
   </div>
 
@@ -149,28 +170,25 @@
 
 <style>
   @keyframes ken-burns {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1.15); }
   }
-  @keyframes scroll-line {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+  @keyframes scroll-down {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(200%); }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
   }
   .animate-ken-burns {
     animation: ken-burns 30s ease-in-out infinite alternate;
   }
-  .animate-scroll-line {
-    animation: scroll-line 2.5s infinite ease-in-out;
+  .animate-scroll-down {
+    animation: scroll-down 2s infinite ease-in-out;
   }
-</style>
-
-<style>
-  @keyframes ken-burns {
-    0% { transform: scale(1.05); }
-    100% { transform: scale(1.15); }
-  }
-  .animate-ken-burns {
-    animation: ken-burns 20s ease-in-out infinite alternate;
+  .animate-pulse-slow {
+    animation: pulse-slow 8s infinite ease-in-out;
   }
 </style>
 
